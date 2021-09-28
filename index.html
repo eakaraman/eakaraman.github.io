@@ -1,124 +1,16 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <base href="/" />
-    <title>Dashboard - Ace Admin</title>
+    <title>Enes Alperen Karaman</title>
 
-
-
-    <!--.net5-->
-    <link href="CareerPortal.Client.styles.css" rel="stylesheet" integrity="" />
-    <link href="./css/inputfile.css" rel="stylesheet" integrity="" />
-    <link href="./css/cropper.css" rel="stylesheet" integrity="" />
-    <!-- yeni -->
-    <link rel="stylesheet" type="text/css" href="./theme/bootstrap/dist/css/bootstrap.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/@fortawesome/fontawesome-free/css/fontawesome.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/@fortawesome/fontawesome-free/css/regular.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/@fortawesome/fontawesome-free/css/brands.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/@fortawesome/fontawesome-free/css/solid.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/dist/css/ace-font.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./theme/dist/css/ace.css" integrity="">
-    <link rel="icon" type="image/png" href="./theme/assets/favicon.png" integrity="" />
-    <link rel="stylesheet" type="text/css" href="./theme/views/default/pages/partials/dashboard/@page-style.css" integrity="">
-    <link rel="stylesheet" type="text/css" href="./css/Nested.css">
-    <!--Dropdown-->
-    <link rel="stylesheet" href="./_content/Radzen.Blazor/css/default-base.css" integrity="">
 </head>
 
 <body>
-    <div id="app">Loading from .net5</div>
-
-    <!-- yeni -->
-    <script src="./theme/jquery/dist/jquery.js" integrity=""></script>
-    <script src="./theme/popper.js/dist/umd/popper.js" integrity=""></script>
-    <script src="./theme/bootstrap/dist/js/bootstrap.js" integrity=""></script>
-    <!--   <script src="./node_modules/chart.js/dist/Chart.js"></script> --> <!--FIX-->
-    <script src="./theme/dist/js/ace.js" integrity=""></script>
-    <script src="./theme/assets/js/demo.js" integrity=""></script>
-    <script src="./theme/views/default/pages/partials/dashboard/@page-script.js" integrity=""></script>
-
-    <!--Nestable-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <script src="./theme/jquery.nestable.js" integrity=""></script>
-
-
-    <script src="./theme/scriptNested.js" integrity=""></script>
-
-
-    <script src="_framework/blazor.webassembly.js" integrity=""></script>
-    <script>
-        setTitle = (title) => { document.title = title; };
-    </script>
-    <!--carousel slider-->
-    <script src="./js/_scripts.js" integrity=""></script>
-    <script src="./js/cropper.js" integrity=""></script>
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="" />
-
-
-
-    <script>
-
-        $(document).ready(function () {
-
-            var updateOutput = function (e) {
-                var list = e.length ? e : $(e.target),
-                    output = list.data('output');
-                if (window.JSON) {
-                    output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
-                } else {
-                    output.val('JSON browser support required for this demo.');
-                }
-            };
-
-            // activate Nestable for list 1
-            $('#nestable').nestable({
-                group: 1
-            })
-                .on('change', updateOutput);
-
-            // activate Nestable for list 2
-            $('#nestable2').nestable({
-                group: 1
-            })
-                .on('change', updateOutput);
-
-            // output initial serialised data
-            updateOutput($('#nestable').data('output', $('#nestable-output')));
-            updateOutput($('#nestable2').data('output', $('#nestable2-output')));
-
-            $('#nestable-menu').on('click', function (e) {
-                var target = $(e.target),
-                    action = target.data('action');
-                if (action === 'expand-all') {
-                    $('.dd').nestable('expandAll');
-                }
-                if (action === 'collapse-all') {
-                    $('.dd').nestable('collapseAll');
-                }
-            });
-
-            $('#nestable3').nestable();
-
-        });
-    </script>
-
-
-    <!--Dropdown-->
-    <script src="./_content/Radzen.Blazor/Radzen.Blazor.js" integrity=""></script>
-
-    <!--carousel slider-->
-    <script>
-        window.initializeCarousel = () => {
-            $('#carouselExampleIndicators').carousel({ interval: 2000 });
-
-            $('#carouselExampleIndicators-prev').click(
-                () => $('#carouselExampleIndicators').carousel('prev'));
-            $('#carouselExampleIndicators-next').click(
-                () => $('#carouselExampleIndicators').carousel('next'));
-        }
-    </script>
-
+    <h1>Test</h1>
 </body>
+
 </html>
